@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleItemTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Update Item"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/closeImg"
+            android:layout_margin="8dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/titleItemTxt"
+            android:background="@color/black"
+            android:id="@+id/viewHLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewHLine"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edItemTitleL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Item Title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="#EAE4E8" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edItemEmailL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Item Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edItemEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="#EAE4E8" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edItemPasswordL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:hint="Enter The Item Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edItemPassword"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="#EAE4E8" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edItemDescrL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Item Description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edItemDescr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EAE4E8"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLength="200" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/updateItemBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/black"
+                android:text="Update Item"
+                android:textSize="20sp">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
